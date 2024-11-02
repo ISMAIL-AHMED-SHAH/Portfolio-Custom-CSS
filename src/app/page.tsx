@@ -1,113 +1,116 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="home mt-14">
+      <section className="first" id="/">
+        <div className="intro">
+          <h1 >
+            Hi! I am Ismail <br /> a Web Developer
+          </h1>
+          <h3 className="text-blue-200">
+            currently on a path to becoming a full-stack developer, driven by a strong interest in both front-end and back-end technologies. I enjoy creating responsive, user-friendly websites and applications, and I am eager to keep growing my skills and embracing new challenges in the field of full-stack development!
+          </h3>
+          <div className="buttons">
+            <motion.button
+              whileTap={{ scale: 0.8 }}
+              whileHover="hover"
+              className="download"
+            >
+              <a href="/CV.png" download>
+                Download CV
+              </a>
+            </motion.button>
+            <motion.button
+              whileTap={{ scale: 0.8 }}
+              whileHover="hover"
+              className="hire"
+            >
+              <a href="mailto:ismailahmedshahpk@gmail.com?subject=Hiring Inquiry&body=Hi,,,">
+                Hire Me
+              </a>
+            </motion.button>
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.div
+          animate={{ rotate: 360 }}
+          className="profile flex items-center justify-center w-[250px] h-[250px] py-5 md:py-0 md:w-[350px] md:h-[350px] rounded-full"
         >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+          <div className="pic">
+            <Image
+              src={"/GitHub.jpeg"}
+              alt="profile-pic"
+              width={100}
+              height={100}
+              className="w-[200px] pl-1 h-[200px] md:w-[300px] md:h-[300px] rounded-full"
+            />
+          </div>
+        </motion.div>
+      </section>
+      <section className="about" id="about">
+        <div className="content">
+          <div className="h1 text-center">About me</div>
+          <p>
+            With extensive experience in teaching, school management, and administration, I am currently expanding my knowledge in web development at GIAIC ((Governor Sindh Initiative Information Technology Course), Metaverse, Blockchain, Web 3.0, and cutting-edge technology). Proud to serve as a sincere student among my peers, I am a passionate frontend developer on an active journey to deepen my skills and transition into full-stack development, eager to tackle new challenges in the dynamic tech landscape.
           </p>
-        </a>
+        </div>
+      </section>
+      <section className="projects" id="edu">
+        <h1 className="text-center">Projects</h1>
+        <div className="cards md:pl-[100px]">
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div className="card w-[350px] h-[430px] bg-[#80e3f0] flex flex-col items-center justify-center gap-4 rounded-[10px]">
+            <div className="image">
+              <Image src={'/Currency-Converter.png'} alt="currency" width={100} height={50} className="w-full h-full rounded-[10px]" />
+            </div>
+            <div className="des">
+              <p className="text-center text-gray-800 w-[300px]">A Next.js currency converter app that enables quick, real-time currency conversions with an intuitive and responsive interface for easy calculations.</p>
+            </div>
+            <div className="link">
+              <motion.button
+                whileTap={{ scale: 0.8 }}
+                whileHover="hover"
+                className="hire"
+              >
+                <a href="https://currency-converter-30-days-of30-projects-in-next-js.vercel.app/" target="blank" className="text-blue-700 font-bold text-xl underline">
+                Currency Converter App
+                </a>
+              </motion.button>
+            </div>
+          </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        </div>
+      </section>
+      <section className="contact" id="contact">
+        <h1>Contact Me</h1>
+        <div className="form">
+          <form action="https://formspree.io/f/mzzbdkvw" method="post">
+            <div className="field first-name">
+              <label htmlFor="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" required placeholder="Ismail" />
+            </div>
+            <div className="field second-name">
+              <label htmlFor="second-name">Last Name</label>
+              <input type="text" name="second-name" id="second-name" required placeholder="Shah" />
+            </div>
+            <div className="field email">
+              <label htmlFor="email">Email</label>
+              <input type="email" name="email" id="email" required placeholder="abc@gmail.com"/>
+            </div>
+            <div className="field subject">
+              <label htmlFor="subject">Subject</label>
+              <input type="text" name="subject" id="subject" required placeholder="Hiring Inquiry" />
+            </div>
+            <div className="field text-area">
+              <label htmlFor="message">Message</label>
+              <textarea name="message" id="message" cols={50} rows={10} required placeholder="Hi,,,"></textarea>
+            </div>
+            <button type="submit" className="submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+    </div>
   );
 }
