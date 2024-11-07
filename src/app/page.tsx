@@ -50,7 +50,7 @@ export default function Home() {
         <div className="content">
           <div className="h1 text-center">About me</div>
           <p>
-          With a strong foundation in office management and administration, and over eight years of experience at Karachi International Container Terminal (KICT), I am now expanding my expertise in web development through the Governor of Sindh's IT Initiative (GIAIC), with a focus on Metaverse, Blockchain, Web 3.0, and emerging technologies. As a dedicated learner and a passionate front-end developer, I am committed to advancing toward full-stack development, ready to tackle new challenges in the dynamic tech landscape.
+          With a strong foundation in office management and administration, and over eight years of experience at Karachi International Container Terminal (KICT), I am now expanding my expertise in web development through the Governor of Sindh IT Initiative (GIAIC), with a focus on Metaverse, Blockchain, Web 3.0, and emerging technologies. As a dedicated learner and a passionate front-end developer, I am committed to advancing toward full-stack development, ready to tackle new challenges in the dynamic tech landscape.
           </p>
         </div>
       </section>
@@ -158,7 +158,7 @@ export default function Home() {
               <Image src={'/portfolio.png'} alt="currency" width={100} height={50} className="w-full h-full rounded-[10px]" />
             </div>
             <div className="des">
-              <p className="text-center text-gray-800 w-[300px]">A dynamic Next.js personal portfolio website designed with Tailwind CSS, Shadcn, and Framer Motion, featuring smooth animations and a rich set of features. The site includes a custom scrollbar, interactive pointer, and distinct sections such as Home, About, Services, Projects, Skills, Reviews, Blog, Contact, with an easily accessible 'Hire Me' button in the navbar.</p>
+              <p className="text-center text-gray-800 w-[300px]">A dynamic Next.js personal portfolio website designed with Tailwind CSS, Shadcn, and Framer Motion, featuring smooth animations and a rich set of features. The site includes a custom scrollbar, interactive pointer, and distinct sections such as Home, About, Services, Projects, Skills, Reviews, Blog, Contact, with an easily accessible &apos;Hire Me&apos; button in the navbar.</p>
             </div>
             <div className="link">
               <motion.button
