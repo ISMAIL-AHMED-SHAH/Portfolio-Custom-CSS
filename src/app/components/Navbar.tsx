@@ -54,7 +54,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.8 }}
               style={{ x: 100 }}
             >
-              <a href="#edu">Projects</a>
+              <a href="#projects">Projects</a>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.2 }}
@@ -84,7 +84,7 @@ export default function Navbar() {
               <a href="#about">About</a>
             </motion.div>
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-              <a href="#edu">Projects</a>
+              <a href="#projects">Projects</a>
             </motion.div>
             <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
               <a href="#contact">Contact</a>
